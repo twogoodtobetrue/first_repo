@@ -82,6 +82,32 @@ user = os.getlogin()
 print(user)
 
 
+#5 function 
+
+import random
+random_list_summer = []
+for i in range(15) :
+    random_list_summer.append(random.randint(-100,100))
+print(random_list_summer)
+print('the sum is ' ,sum(random_list_summer))
+    
+
+#6 function 
+
+def fibonacci_of(n):
+    if n in {0, 1}:  
+        return n
+    else :
+        return fibonacci_of(n - 1) + fibonacci_of(n - 2)  
+for i in range(5) :
+    print(fibonacci_of(i))
+
+#7
+
+x = int(input('please insert the number :'))
+F = lambda x : x**2
+print(F(x))
+
 
 
 
